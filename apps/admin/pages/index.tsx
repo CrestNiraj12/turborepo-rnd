@@ -1,10 +1,20 @@
-import { Button } from "ui";
+import Layout from "components/Layout";
+import Image from "next/image";
+import { VStack, Heading } from "@chakra-ui/react";
 
-export default function Web() {
+export default function Home() {
   return (
-    <div>
-      <h1>Web</h1>
-      <Button />
-    </div>
+    <Layout>
+      <VStack>
+        <Image
+          className="dark:invert"
+          src="/GitHub-Mark-32px.png"
+          width="32"
+          height="32"
+          alt="Github"
+        />
+        <Heading as="h1">Login using your Github username</Heading>
+      </VStack>
+    </Layout>
   );
 }

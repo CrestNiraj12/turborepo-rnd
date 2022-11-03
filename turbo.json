@@ -10,6 +10,11 @@
       "outputs": ["dist/**", ".next/**"],
       "env": ["IMAGE_URL"]
     },
+    "admin#build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**", ".next/**"],
+      "env": ["NODE_ENV", "SECRET_COOKIE_PASSWORD"]
+    },
     "lint": {
       "outputs": []
     },
